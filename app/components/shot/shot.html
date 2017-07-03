@@ -1,0 +1,18 @@
+<navbar></navbar>
+<div class="show-shot">
+  <div>
+    <div>
+      <h2>{{$ctrl.shot.title}}<h2>
+    </div>
+    <div>
+      <img ng-src="{{$ctrl.shot.images.normal}}"></img>
+    </div>
+    <div class="user-content">
+      <img class="user-img" src="{{$ctrl.shot.user.avatar_url}}"></img>
+      <a href= "{{$ctrl.shot.user.html_url}}">{{$ctrl.shot.user.name}}</a>
+      <span class="like">
+        <a ng-click="$ctrl.likeAShot()" class="glyphicon glyphicon-heart"> {{$ctrl.shot.likes_count}} Likes<a>
+      </span>
+    </div>
+  </div>
+</div>

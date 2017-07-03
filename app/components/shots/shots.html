@@ -1,0 +1,27 @@
+<navbar></navbar>
+<div style="height:500px">
+  <div>
+    <form id="search">
+       <input class="search-text placeholder" type="text" name="q" placeholder="Search by Shots" ng-model="$ctrl.textSearch">
+       <select name="singleSelect" ng-model="$ctrl.sizeSelect">
+         <option selected disabled hidden value="">Size Shot</option>
+         <option value="small">Pequeno</option>
+         <option value="medium">Grande</option>
+       </select>
+
+    </form>
+  </div>
+<div infinite-scroll=$ctrl.loadMore() infinite-scroll-distance='2' infinite-scroll-disabled='$ctrl.busy'class="container-shots">
+  <div ng-repeat= "shot in $ctrl.listShots|filter: $ctrl.textSearch">
+      <div ng-class=$ctrl.sizeSelect class= "shot-item">
+        <div ng-click = "$ctrl.openShot(shot.id)" >
+          <img class="img-shot" ng-src="{{$ctrl.sizeSelect == 'small' ? shot.images.teaser : shot.images.normal}}">{{$ctrl.imgSrc()}}</img>
+          <div class= "name-shot">{{shot.title | limitTo: 15 }}{{shot.title.length < 15 ? " ": "..."}}</div>
+        </div>
+        <div class="user-detail">
+          <img class="user-img" src="{{shot.user.avatar_url}}"></img>
+          <a href= "{{shot.user.html_url}}">{{shot.user.name}}</a>
+        </div>
+      </div>
+  </div>
+</div>
