@@ -1,7 +1,5 @@
 # [Projeto Front End]
 
-Frontend com algumas das principais funcionalidades do site [dribbble.com](https://dribbble.com).
-
 ## Quick start
 
 + Instalar todas as dependências.
@@ -19,8 +17,6 @@ $ yarn server
 ```bash
 $ yarn test
 ```
-
-## Autores
 
 **Leonardo Santiago**
 
