@@ -5,7 +5,7 @@
 + Instalar todas as dependências.
 >
 ```bash
-$ yarn install
+$ npm install
 ```
 + Para rodar o server
 >
