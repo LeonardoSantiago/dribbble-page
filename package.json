@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "webpack-dev-server  --progress --hot --config --content-base ./public"
+    "test": "protractor protractor.config.js",
+    "server": "webpack-dev-server --history-api-fallback --progress --hot --content-base ./public"
   },
   "repository": {
     "type": "git",
