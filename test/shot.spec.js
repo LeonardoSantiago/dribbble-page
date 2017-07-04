@@ -13,6 +13,10 @@ describe('testCtrl', function () {
   element.all(by.tagName('option')).get(2).click()
 
   expect(element.all(by.css('.shot-item.medium')).isPresent()).toBe(true)
+
+  element.all(by.tagName('option')).get(3).click()
+
+  expect(element.all(by.css('.shot-item.large')).isPresent()).toBe(true)
  })
 
  it('clicar em um shot e ir pra outra pagina', function (){
@@ -20,7 +24,7 @@ describe('testCtrl', function () {
 
    element.all(by.css('.shot-item')).get(0).click();
 
-   expect(element.all(by.css('.show-shot')).isPresent()).toBe(true)
+   expect(element.all(by.css('.glyphicon')).isPresent()).toBe(true)
 
  })
 })

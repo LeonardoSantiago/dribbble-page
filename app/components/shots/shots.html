@@ -6,7 +6,8 @@
        <select name="singleSelect" ng-model="$ctrl.sizeSelect">
          <option selected disabled hidden value="">Size Shot</option>
          <option value="small">Pequeno</option>
-         <option value="medium">Grande</option>
+         <option value="medium">Medio</option>
+         <option value="large">Grande</option>
        </select>
 
     </form>
@@ -15,7 +16,7 @@
   <div ng-repeat= "shot in $ctrl.listShots|filter: $ctrl.textSearch">
       <div ng-class=$ctrl.sizeSelect class= "shot-item">
         <div ng-click = "$ctrl.openShot(shot.id)" >
-          <img class="img-shot" ng-src="{{$ctrl.sizeSelect == 'small' ? shot.images.teaser : shot.images.normal}}">{{$ctrl.imgSrc()}}</img>
+          <img class="img-shot" ng-src="{{$ctrl.sizeSelect == 'small' ? shot.images.teaser : shot.images.normal}}"></img>
           <div class= "name-shot">{{shot.title | limitTo: 15 }}{{shot.title.length < 15 ? " ": "..."}}</div>
         </div>
         <div class="user-detail">

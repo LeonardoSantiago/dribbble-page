@@ -41,7 +41,8 @@ select{
   .img-shot{
     width: 95%;
     padding: 5px;
-  }
+    cursor: pointer;
+    }
 
   div.name-shot{
     margin: 7px;
@@ -75,10 +76,15 @@ select{
 @media screen and (min-width: 769px) {
     .shot-item.small {
         width: 200px;
-        height: 210px;
-
+        height: 200px;
     }
+
     .shot-item.medium {
+        width: 230px;
+        height: 230px;
+    }
+
+    .shot-item.large {
         width: 350px;
         height: 315px;
     }
