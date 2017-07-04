@@ -1,11 +1,11 @@
 # [Projeto Front End]
 
-## Quick start
+## Instalação e Uso
 
 + Instalar todas as dependências.
 >
 ```bash
-$ yarn install
+$ npm install
 ```
 + Para rodar o server
 >
