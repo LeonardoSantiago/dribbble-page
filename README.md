@@ -12,8 +12,13 @@ $ npm install
 ```bash
 $ yarn server
 ```
-+ Para rodar os testes
++ Para rodar os testes(rode primeiro o server e depois o comando de testes)
 >
++Primeiro:
+```bash
+$ yarn server
+```
+Depois:
 ```bash
 $ yarn test
 ```
