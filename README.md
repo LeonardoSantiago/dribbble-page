@@ -1,6 +1,6 @@
 # [Projeto Front End]
 
-## Quick start
+## Instalação e Uso
 
 + Instalar todas as dependências.
 >
