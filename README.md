@@ -14,7 +14,7 @@ $ yarn server
 ```
 + Para rodar os testes(rode primeiro o server e depois o comando de testes)
 >
-+Primeiro:
+Primeiro:
 ```bash
 $ yarn server
 ```
